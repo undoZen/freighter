@@ -27,7 +27,7 @@ Usage
 
 It's recommended to use PortJS in a new project, so let's just start one:
 
-    npm install -g express # if you didn't before
+    npm install -g express # if you didn't install it before
     express example
     cd example
     npm install
@@ -59,9 +59,11 @@ modify app.js to use portjs:
 
 one more thing, add some lines in views/layout.jade:
 
-    app.use(app.router);
-    app.use(portjs());
-    app.use(express.static(path.join(__dirname, 'public')));
+    != js()
+    script
+      seajs.use('beepboop', function (bb) {
+        bb.more();
+      });
 
 now run `node app.js` and visit [http://127.0.0.1:3000/](http://127.0.0.1:3000/) and open Developer Tools in your browser, you should see output like:
 
