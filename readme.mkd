@@ -12,16 +12,6 @@ Sea.js In Short
 
 Sea.js is a script loader implemented [CMD](http://wiki.commonjs.org/wiki/Modules/Wrappings) ... Well, I'll add this section in the future.
 
-The RDD Strategy of Freighter
------------------------------
-
-Right now I'm developing Freighter using a [Readme-Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html) strategy. So everything you read below, is my current focus and will be done in my next git push.
-
-Planning v0.0.1
----------------
-
-Just make a working [MVP](http://en.wikipedia.org/wiki/Minimum_viable_product).
-
 Usage
 -----
 
@@ -72,7 +62,23 @@ now run `node app.js` and visit [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
 
 Also, as you can see, `string.js` and `beepboop.js` is totally compatible with node.js, so you can use it in node.js directly, just try it yourself.
 
+The RDD Strategy of Freighter
+-----------------------------
+
+Right now I'm developing Freighter using a [Readme-Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html) strategy. So everything you read below, is my current focus and will be done in my next git push.
+
+Planning
+----------------
+
+### v0.0.1b
+
+Need some tests and travis-ci.
+
+### v0.0.2
+
+Serve coffee-script files.
+
 How It Works
 ------------
 
-Sorry, not today. I'll write it down after v0.0.1 published.
+Sorry, not today. I'll write it down after v0.0.2 published, maybe.
