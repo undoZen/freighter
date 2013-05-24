@@ -1,0 +1,25 @@
+{
+  "name": "freighter",
+  "version": "0.0.1",
+  "description": "The easiest way to use Sea.js in your node.js project.",
+  "main": "index.js",
+  "dependencies": {
+    "uglify-js": "~2.2.5",
+    "cmd-util": "~0.3.8",
+    "seajs": "~2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/undoZen/freighter.git"
+  },
+  "author": "undoZen@gmail.com",
+  "license": "MIT",
+  "readmeFilename": "readme.mkd",
+  "bugs": {
+    "url": "https://github.com/undoZen/freighter/issues"
+  }
+}
