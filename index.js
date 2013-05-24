@@ -18,7 +18,7 @@ module.exports = function (options) {
 
   var astOrNext = function (filepath, next, callback) {
     filepath = filepath.replace(/\?.*/, '');
-    if (!(filepath.match(/\.js$/))) return next();
+    if (!(filepath.match(/\.js(\.map)?$/))) return next();
     var fullfilepath = path.join(seajsDist, filepath.replace(options.js + '/', ''));
     exists(fullfilepath, function (x) {
       if (x) {
