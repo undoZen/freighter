@@ -1,4 +1,4 @@
-reighter
+Freighter
 =========
 
 Freighter is not and will never be another JavaScript loader and module dependency solution, because [Sea.js](http://seajs.org) just did a great job on this. Sea.js is the best script loader I've ever seen and used. I think you should try it, too.
