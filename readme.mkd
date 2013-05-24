@@ -1,7 +1,7 @@
-PortJS
-======
+reighter
+=========
 
-PortJS is not and will never be another JavaScript loader and module dependency solution, because [Sea.js](http://seajs.org) just did a great job on this. Sea.js is the best script loader I've ever seen and used. I think you should try it, too.
+Freighter is not and will never be another JavaScript loader and module dependency solution, because [Sea.js](http://seajs.org) just did a great job on this. Sea.js is the best script loader I've ever seen and used. I think you should try it, too.
 
 Unfortunately, if you can't read Chinese, you will find it's difficult to use Sea.js because It don't even has a English document! Therefore Sea.js is barely used outside of China despite how popular it is in Chinese web development community.
 
@@ -12,10 +12,10 @@ Sea.js In Short
 
 Sea.js is a script loader implemented [CMD](http://wiki.commonjs.org/wiki/Modules/Wrappings) ... Well, I'll add this section in the future.
 
-The RDD Strategy of PortJS
---------------------------
+The RDD Strategy of Freighter
+-----------------------------
 
-Right now I'm developing PortJS using a [Readme-Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html) strategy. So everything you read below, is my current focus and will be done in my next git push.
+Right now I'm developing Freighter using a [Readme-Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html) strategy. So everything you read below, is my current focus and will be done in my next git push.
 
 Planning v0.0.1
 ---------------
@@ -25,13 +25,13 @@ Just make a working [MVP](http://en.wikipedia.org/wiki/Minimum_viable_product).
 Usage
 -----
 
-It's recommended to use PortJS in a new project, so let's just start one:
+It's recommended to use Freighter in a new project, so let's just start one:
 
     npm install -g express # if you didn't install it before
     express example
     cd example
     npm install
-    npm install --save portjs
+    npm install --save freighter
 
 add a file public/javascripts/string.js:
 
@@ -47,14 +47,14 @@ and public/javascripts/beepboop.js:
       console.log(str.eeoo('BEEP BOP BEEP'));
     }
 
-modify app.js to use portjs:
+modify app.js to use Freighter:
 
     // ...
-    var portjs = require('portjs');
+    var freighter = require('freighter');
     var app = express();
     // ...
     app.use(app.router);
-    app.use(portjs());
+    app.use(freighter());
     app.use(express.static(path.join(__dirname, 'public')));
 
 one more thing, add some lines in views/layout.jade:
