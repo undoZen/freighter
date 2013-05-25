@@ -78,6 +78,20 @@ Need some tests and travis-ci.
 
 Serve coffee-script files.
 
+It will also work with coffee script files, so if you change string.js to string.coffee:
+
+    exports.eeoo = (str) ->
+      str.replace(/EE/g, 'OO')
+
+and beepboop.js to beepboop.coffee:
+
+    {eeoo} = require('string')
+    console.log(eeoo('BEEP'))
+    exports.more = ->
+      console.log(eeoo('BEEP BOP BEEP'))
+
+It will also works.
+
 How It Works
 ------------
 
